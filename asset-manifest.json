@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/valida-usuario/static/css/main.e6c13ad2.css",
+    "main.js": "/valida-usuario/static/js/main.5cb3d10d.js",
+    "index.html": "/valida-usuario/index.html",
+    "main.e6c13ad2.css.map": "/valida-usuario/static/css/main.e6c13ad2.css.map",
+    "main.5cb3d10d.js.map": "/valida-usuario/static/js/main.5cb3d10d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.5cb3d10d.js"
+  ]
+}
