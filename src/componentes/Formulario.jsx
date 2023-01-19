@@ -29,7 +29,7 @@ const Formulario = (props) => {
     if (usuario === userValido && password === passValida) {
       setTipo("exito");
       setTxtBoton("Enviando...");
-      return setMensaje("Envio exitoso");
+      return setMensaje("Sesión iniciada correctamente");
     } else {
       setTipo("error");
       return setMensaje("Nombre de usuario o contraseña incorrectos");
