@@ -2,8 +2,8 @@ import Formulario from "./componentes/Formulario";
 
 function App() {  
   return (
-    <div className="container">
-      <header className="text-light bg-black text-center">
+    <div className="container text-light">
+      <header className="text-center">
         <h1>Acceso usuarios registrados</h1>
       </header>
 
