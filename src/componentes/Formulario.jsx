@@ -10,10 +10,11 @@ const Formulario = (props) => {
 
   const [mensaje, setMensaje] = useState("");
   const [tipo, setTipo] = useState(null);
-
+  
   const passValida = "252525";
   const userValido = "ADL";
-
+  
+    
   const validarFormulario = (e) => {
     e.preventDefault();
     setTipo(null);
@@ -28,7 +29,7 @@ const Formulario = (props) => {
     }
     if (usuario === userValido && password === passValida) {
       setTipo("exito");
-      setTxtBoton("Enviando...");
+      setTxtBoton("Enviando...");      
       return setMensaje("Sesión iniciada correctamente");
     } else {
       setTipo("error");
@@ -37,8 +38,8 @@ const Formulario = (props) => {
   };
   let spinner =
     tipo === "exito" ? (
-      <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
+      <div className="spinner-border" role="status">
+        <span className="visually-hidden">Loading...</span>
       </div>      
     ) : (
       ""
@@ -64,7 +65,7 @@ const Formulario = (props) => {
           </div>
           <div className="row pt-2 text-center">
             <div className="col">
-              <button
+              <button onClick={() => setTimeout(setMensaje,3000)}
                 className="btn btn-primary"
                 disabled={usuario === "" || password === "" || tipo ==="exito"}
               >
